@@ -1,0 +1,11 @@
+E:\Программы итд\number31\number31\bin\Debug\number31.exe.config
+E:\Программы итд\number31\number31\bin\Debug\number31.exe
+E:\Программы итд\number31\number31\bin\Debug\number31.pdb
+E:\Программы итд\number31\number31\obj\Debug\number31.csprojAssemblyReference.cache
+E:\Программы итд\number31\number31\obj\Debug\number31.Form1.resources
+E:\Программы итд\number31\number31\obj\Debug\number31.FormReference.resources
+E:\Программы итд\number31\number31\obj\Debug\number31.Properties.Resources.resources
+E:\Программы итд\number31\number31\obj\Debug\number31.csproj.GenerateResource.cache
+E:\Программы итд\number31\number31\obj\Debug\number31.csproj.CoreCompileInputs.cache
+E:\Программы итд\number31\number31\obj\Debug\number31.exe
+E:\Программы итд\number31\number31\obj\Debug\number31.pdb
