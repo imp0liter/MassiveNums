@@ -14,8 +14,8 @@ namespace number31
     {
         int[] array = new int[45]; // объявление массива
         Random random = new Random();
-        int a = 1;
-        int b = 45;
+
+
 
         public Form1()
         {
@@ -126,5 +126,19 @@ namespace number31
 
         }
 
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e) // вывод в диаграмму
+        {
+            chart.Series[0].Points.DataBindY(array);
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+          
+        }
     }
 }

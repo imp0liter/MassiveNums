@@ -28,6 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -42,6 +45,10 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel3 = new System.Windows.Forms.LinkLabel();
             this.button7 = new System.Windows.Forms.Button();
+            this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -109,7 +116,7 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button5.Location = new System.Drawing.Point(1225, 433);
+            this.button5.Location = new System.Drawing.Point(1204, 654);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(102, 23);
             this.button5.TabIndex = 5;
@@ -195,20 +202,75 @@
             // 
             this.button7.BackColor = System.Drawing.Color.LightCyan;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(353, 196);
+            this.button7.Location = new System.Drawing.Point(1072, 377);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(265, 63);
+            this.button7.Size = new System.Drawing.Size(234, 63);
             this.button7.TabIndex = 12;
             this.button7.Text = "Очистка";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // chart
+            // 
+            this.chart.BackColor = System.Drawing.Color.Indigo;
+            this.chart.BackImageTransparentColor = System.Drawing.Color.White;
+            this.chart.BackSecondaryColor = System.Drawing.SystemColors.ActiveBorder;
+            this.chart.BorderlineColor = System.Drawing.Color.MediumPurple;
+            chartArea1.BorderColor = System.Drawing.Color.DimGray;
+            chartArea1.Name = "Массив";
+            this.chart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart.Legends.Add(legend1);
+            this.chart.Location = new System.Drawing.Point(7, 377);
+            this.chart.Name = "chart";
+            this.chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
+            series1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
+            series1.ChartArea = "Массив";
+            series1.Color = System.Drawing.Color.Gold;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            series1.IsValueShownAsLabel = true;
+            series1.IsXValueIndexed = true;
+            series1.Legend = "Legend1";
+            series1.Name = "Элемент массива";
+            this.chart.Series.Add(series1);
+            this.chart.Size = new System.Drawing.Size(1059, 300);
+            this.chart.TabIndex = 13;
+            this.chart.Text = "chart1";
+            this.chart.Click += new System.EventHandler(this.chart1_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.LightCyan;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button8.Location = new System.Drawing.Point(1072, 472);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(234, 63);
+            this.button8.TabIndex = 14;
+            this.button8.Text = "Построить диаграмму";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.LightCyan;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button9.Location = new System.Drawing.Point(353, 196);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(265, 63);
+            this.button9.TabIndex = 15;
+            this.button9.Text = "Очистка";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
-            this.ClientSize = new System.Drawing.Size(1339, 468);
+            this.ClientSize = new System.Drawing.Size(1339, 700);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.chart);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.linkLabel2);
@@ -228,6 +290,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.chart)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,6 +311,9 @@
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.LinkLabel linkLabel3;
         private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
 
