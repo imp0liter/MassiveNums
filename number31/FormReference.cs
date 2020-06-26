@@ -23,24 +23,24 @@ namespace number31
             
         }
 
-        private void button4_Click(object sender, EventArgs e) // закрыть приложение
+        private void Exit(object sender, EventArgs e) // закрыть приложение
         {
             Application.Exit();
         }
 
-        private void button3_Click(object sender, EventArgs e) // переход в другое окно
+        private void back(object sender, EventArgs e) // переход в другое окно
         {
             this.Hide();
             Form1 form = new Form1();
             form.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e) // Переход на страницу разрабочика для связи с ним
+        private void Razr(object sender, EventArgs e) // Переход на страницу разрабочика для связи с ним
         {
             Process.Start("https://vk.com/imp0lite");
         }
 
-        private void button1_Click(object sender, EventArgs e) // справочный материал по пользованию программой
+        private void Spravka(object sender, EventArgs e) // справочный материал по пользованию программой
         {
             Spravka reference = new Spravka();
             reference.Show();

@@ -23,12 +23,7 @@ namespace number31
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e) // создание массива
+        private void RandMass(object sender, EventArgs e) // рандом массива
         {
             int i = 1;
             richTextBox1.Text = "";
@@ -40,14 +35,14 @@ namespace number31
             }
         }
 
-        private void button2_Click(object sender, EventArgs e) // Нахождение максимального элемента в массиве 
+        private void MaxValue(object sender, EventArgs e)
         {
             int maxValue = array.Max<int>(); // нахождение методом расширения Max
             richTextBox2.Text = "";
             richTextBox2.Text += (maxValue); // вывод
         }
 
-        private void button3_Click(object sender, EventArgs e) // сортировка по возрастанию
+        private void Sort1(object sender, EventArgs e) // сортировка по возрастанию
         {
             int i = 1;
             int j = 2;
@@ -76,7 +71,7 @@ namespace number31
                     richTextBox3.Text += (array[i].ToString() + " ");
         }
 
-        private void button4_Click(object sender, EventArgs e) // сортировка по убыванию
+        private void Sort2(object sender, EventArgs e) // сортировка по убыванию
         {
             Array.Sort(array);
             Array.Reverse(array);
@@ -87,23 +82,35 @@ namespace number31
 
         }
 
-        private void button7_Click(object sender, EventArgs e) // очистка 
+        private void Cleaning(object sender, EventArgs e) // очистка 
         {
             richTextBox1.Text = "";
             richTextBox2.Text = "";
             richTextBox3.Text = "";
         }
 
-        private void button6_Click(object sender, EventArgs e) // закрыть приложение
+        private void Exit(object sender, EventArgs e) // закрыть приложение
         {
                 Application.Exit();
         }
 
-        private void button5_Click(object sender, EventArgs e) // переход в другое окно
+        private void Transition(object sender, EventArgs e) // переход в другое окно
         {
             this.Hide();
             FormReference formReference = new FormReference();
             formReference.Show();
+        }
+
+        private void MaxValueM(object sender, EventArgs e)
+        {
+            int maxValue = array.Max<int>(); // нахождение методом расширения Max
+            richTextBox2.Text = "";
+            richTextBox2.Text += (maxValue); // вывод
+        }
+
+        private void Create_Diagram(object sender, EventArgs e) // вывод в диаграмму
+        {
+            chart.Series[0].Points.DataBindY(array);
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
@@ -131,14 +138,14 @@ namespace number31
 
         }
 
-        private void button8_Click(object sender, EventArgs e) // вывод в диаграмму
-        {
-            chart.Series[0].Points.DataBindY(array);
-        }
-
         private void button9_Click(object sender, EventArgs e)
         {
           
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

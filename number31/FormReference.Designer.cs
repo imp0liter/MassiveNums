@@ -44,7 +44,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Справка";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Spravka);
             // 
             // button2
             // 
@@ -56,7 +56,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Связаться с разрабочиком";
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Razr);
             // 
             // button3
             // 
@@ -67,7 +67,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Вернуться к программе";
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.back);
             // 
             // button4
             // 
@@ -78,7 +78,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "X";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.Exit);
             // 
             // FormReference
             // 
