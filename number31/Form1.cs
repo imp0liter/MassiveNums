@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace number31
 {
@@ -112,6 +113,29 @@ namespace number31
 
         }
 
+        private string name;
+
+        private void Open(object sender, EventArgs e) // открытие файла 
+        {
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                name = openFileDialog1.FileName;
+                richTextBox1.Clear();
+                richTextBox1.Text = File.ReadAllText(name);
+
+            }
+        }
+         
+        private void save(object sender, EventArgs e) // сохранение файла
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                name = openFileDialog1.FileName;
+                File.WriteAllText(name, richTextBox1.Text);
+
+            }
+        }
+
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
 
@@ -146,5 +170,6 @@ namespace number31
         {
 
         }
+
     }
 }

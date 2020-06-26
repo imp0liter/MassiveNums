@@ -47,6 +47,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button8 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button2 = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.chart)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,12 +80,12 @@
             this.RandMass.UseVisualStyleBackColor = false;
             this.RandMass.Click += new System.EventHandler(this.RandMassive);
             // 
-            // MaxValue
+            // maxValueM
             // 
             this.maxValueM.BackColor = System.Drawing.Color.LightCyan;
             this.maxValueM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.maxValueM.Location = new System.Drawing.Point(353, 88);
-            this.maxValueM.Name = "MaxValue";
+            this.maxValueM.Name = "maxValueM";
             this.maxValueM.Size = new System.Drawing.Size(265, 81);
             this.maxValueM.TabIndex = 2;
             this.maxValueM.Text = "Найти максимальный элемент в массиве";
@@ -251,12 +255,42 @@
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.Create_Diagram);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.LightCyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button1.Location = new System.Drawing.Point(353, 196);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(265, 63);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Загрузить массив";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.Open);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.LightCyan;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button2.Location = new System.Drawing.Point(686, 196);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(282, 63);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Сохранить массив";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.save);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Indigo;
             this.ClientSize = new System.Drawing.Size(1339, 700);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.chart);
             this.Controls.Add(this.button7);
@@ -301,6 +335,10 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 

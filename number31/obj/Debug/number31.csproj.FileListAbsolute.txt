@@ -12,7 +12,6 @@ E:\Программы итд\number31\number31\obj\Debug\number31.pdb
 E:\Программы_итд\number31\number31\bin\Debug\number31.exe.config
 E:\Программы_итд\number31\number31\bin\Debug\number31.exe
 E:\Программы_итд\number31\number31\bin\Debug\number31.pdb
-E:\Программы_итд\number31\number31\obj\Debug\number31.csprojAssemblyReference.cache
 E:\Программы_итд\number31\number31\obj\Debug\number31.Form1.resources
 E:\Программы_итд\number31\number31\obj\Debug\number31.FormReference.resources
 E:\Программы_итд\number31\number31\obj\Debug\number31.Properties.Resources.resources
