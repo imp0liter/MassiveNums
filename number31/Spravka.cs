@@ -22,9 +22,11 @@ namespace number31
 
         }
 
-        private void Exit(object sender, EventArgs e)
+        private void Exit(object sender, EventArgs e) // закрыть справку
         {
-            Application.Exit();
+            this.Hide();
+            FormReference formReference = new FormReference();
+            formReference.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)

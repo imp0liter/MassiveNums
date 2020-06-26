@@ -16,14 +16,7 @@ namespace number31
         Random random = new Random();
 
 
-
-        public Form1()
-        {
-            InitializeComponent();
-
-        }
-
-        private void RandMass(object sender, EventArgs e) // рандом массива
+        private void RandMassive(object sender, EventArgs e) // рандом массива
         {
             int i = 1;
             richTextBox1.Text = "";
@@ -35,7 +28,7 @@ namespace number31
             }
         }
 
-        private void MaxValue(object sender, EventArgs e)
+        private void MaxValueM(object sender, EventArgs e)
         {
             int maxValue = array.Max<int>(); // нахождение методом расширения Max
             richTextBox2.Text = "";
@@ -101,7 +94,7 @@ namespace number31
             formReference.Show();
         }
 
-        private void MaxValueM(object sender, EventArgs e)
+        private void MaxValue(object sender, EventArgs e) // нахождение максимального
         {
             int maxValue = array.Max<int>(); // нахождение методом расширения Max
             richTextBox2.Text = "";
@@ -111,6 +104,12 @@ namespace number31
         private void Create_Diagram(object sender, EventArgs e) // вывод в диаграмму
         {
             chart.Series[0].Points.DataBindY(array);
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
+
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)

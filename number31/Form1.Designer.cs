@@ -34,7 +34,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.RandMass = new System.Windows.Forms.Button();
-            this.MaxValue = new System.Windows.Forms.Button();
+            this.maxValueM = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -74,19 +74,19 @@
             this.RandMass.TabIndex = 1;
             this.RandMass.Text = "Сгенерировать массив случайных чисел";
             this.RandMass.UseVisualStyleBackColor = false;
-            this.RandMass.Click += new System.EventHandler(this.RandMass);
+            this.RandMass.Click += new System.EventHandler(this.RandMassive);
             // 
             // MaxValue
             // 
-            this.MaxValue.BackColor = System.Drawing.Color.LightCyan;
-            this.MaxValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MaxValue.Location = new System.Drawing.Point(353, 88);
-            this.MaxValue.Name = "MaxValue";
-            this.MaxValue.Size = new System.Drawing.Size(265, 81);
-            this.MaxValue.TabIndex = 2;
-            this.MaxValue.Text = "Найти максимальный элемент в массиве";
-            this.MaxValue.UseVisualStyleBackColor = false;
-            this.MaxValue.Click += new System.EventHandler(this.MaxValueM);
+            this.maxValueM.BackColor = System.Drawing.Color.LightCyan;
+            this.maxValueM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.maxValueM.Location = new System.Drawing.Point(353, 88);
+            this.maxValueM.Name = "MaxValue";
+            this.maxValueM.Size = new System.Drawing.Size(265, 81);
+            this.maxValueM.TabIndex = 2;
+            this.maxValueM.Text = "Найти максимальный элемент в массиве";
+            this.maxValueM.UseVisualStyleBackColor = false;
+            this.maxValueM.Click += new System.EventHandler(this.MaxValue);
             // 
             // button3
             // 
@@ -212,6 +212,8 @@
             // chart
             // 
             this.chart.BackColor = System.Drawing.Color.Indigo;
+            this.chart.BackGradientStyle = System.Windows.Forms.DataVisualization.Charting.GradientStyle.VerticalCenter;
+            this.chart.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.chart.BackImageTransparentColor = System.Drawing.Color.White;
             this.chart.BackSecondaryColor = System.Drawing.SystemColors.ActiveBorder;
             this.chart.BorderlineColor = System.Drawing.Color.MediumPurple;
@@ -220,7 +222,7 @@
             this.chart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart.Legends.Add(legend1);
-            this.chart.Location = new System.Drawing.Point(7, 377);
+            this.chart.Location = new System.Drawing.Point(7, 350);
             this.chart.Name = "chart";
             this.chart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
             series1.BorderColor = System.Drawing.SystemColors.ActiveBorder;
@@ -232,7 +234,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Элемент массива";
             this.chart.Series.Add(series1);
-            this.chart.Size = new System.Drawing.Size(1059, 300);
+            this.chart.Size = new System.Drawing.Size(1059, 338);
             this.chart.TabIndex = 13;
             this.chart.Text = "chart1";
             this.chart.Click += new System.EventHandler(this.chart1_Click);
@@ -267,7 +269,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.MaxValue);
+            this.Controls.Add(this.maxValueM);
             this.Controls.Add(this.RandMass);
             this.Controls.Add(this.richTextBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -286,7 +288,7 @@
 
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Button RandMass;
-        private System.Windows.Forms.Button MaxValue;
+        private System.Windows.Forms.Button maxValueM;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
