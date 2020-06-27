@@ -20,3 +20,4 @@ E:\Программы_итд\number31\number31\obj\Debug\number31.csproj.CoreCom
 E:\Программы_итд\number31\number31\obj\Debug\number31.exe
 E:\Программы_итд\number31\number31\obj\Debug\number31.pdb
 E:\Программы_итд\number31\number31\obj\Debug\number31.Spravka.resources
+E:\Программы_итд\number31\number31\obj\Debug\number31.csprojAssemblyReference.cache

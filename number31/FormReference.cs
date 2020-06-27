@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Diagnostics; // класс для доступа к локальным и удалённым процессам, здесь он для перехода по ссылке на кнопке 2
+using System.Diagnostics; // класс для доступа к локальным и удалённым процессам, здесь он для перехода по ссылке на кнопке Razr
 
 namespace number31
 {
