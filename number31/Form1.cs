@@ -29,7 +29,7 @@ namespace number31
             }
         }
 
-        private void MaxValueM(object sender, EventArgs e)
+        private void MaxValueM(object sender, EventArgs e) // поиск максимального числа
         {
             int maxValue = array.Max<int>(); // нахождение методом расширения Max
             richTextBox2.Text = "";
